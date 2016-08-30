@@ -1,0 +1,30 @@
+<jumbotron-bcomponent title="ng-bcomponents">
+    Bootstrap components for angular 2
+</jumbotron-bcomponent>
+<div class="container col-sm-12 col-md-12">
+    <heading-bcomponent title="Getting Started" subtitle="SystemJS & npm" [size]="3"></heading-bcomponent>
+    <p>
+        Install with npm by entering <code>npm i ng-bcomponents</code> into your termianl.
+    </p>
+    <p>
+        Alter your SystemJS config file to include the ng-bcomponents module.<br/>
+        <pre>
+var map = {{ '{' }}
+    // Your other libraries here
+    'ng-bcomponents':                'node_modules/ng-bcomponents'
+{{ '}' }};
+var packages = {{ '{' }}
+    // Your other libraries here
+    'ng-bcomponents':                {{ '{' }} main: 'index.js', defaultExtension: 'js' {{ '}' }}
+{{ '}' }};
+var config = {{ '{' }}
+    map: map,
+    packages: packages,
+    defaultJSExtensions: true
+{{ '}' }};
+System.config(config);</pre>
+    </p>
+    <p>
+        Import your package like any other module: <code>import {{ '{' }}AlertBComponent{{ '}' }} from 'ng-bcomponents';</code>
+    </p>
+</div>

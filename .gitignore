@@ -1,0 +1,8 @@
+node_modules
+typings
+*.log
+dist
+build
+dev
+.vscode
+src/scripts/scripts-transpiled

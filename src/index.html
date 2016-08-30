@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>My App</title>
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <script>
+        System.import('scripts/app.min.js').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<body>
+
+    <app-component>
+        <style>
+            html, body, .container {
+                height: 100%;
+                background-color: #000;
+                color: #fff;
+            }
+            .container {
+                display: table;
+                vertical-align: middle;
+            }
+            .vertical-center-row {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        </style>
+
+        <div class="container">
+            <div class="vertical-center-row">
+                <div align="center">
+                    <h1>Loading ng-bcomponents docs</h1>
+                </div>
+            </div>
+        </div>
+    </app-component>
+ 
+</body>
+</html>
