@@ -9,7 +9,6 @@ import {LinkBComponent} from 'ng-bcomponents';
     directives: [ROUTER_DIRECTIVES, SidenavBComponent]
 })
 export class AppComponent {
-    public navBrand = new LinkBComponent().Initialize("ng-bcomponents", '/home', true);
     public navItems = [
         new SidenavItem(new LinkBComponent().Initialize("Home", "/home", true)),
         new SidenavItem(null, 'BComponent (base)', [

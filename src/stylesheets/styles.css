@@ -1,0 +1,49 @@
+body, html {
+    background-color: #f0f5f5;
+}
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+.jumbotron .container {
+    background: transparent;
+    box-shadow: none;
+}
+
+/** Topbar */
+#top-bar {
+    height: 55px;
+    background: #002533;
+    color: #fff;
+    padding: 15px;
+}
+#top-bar h3 {
+    margin: 0;
+}
+/** End Topbar */
+
+
+/** Sidenav */
+.navbar {
+    margin-top: 55px;
+}
+.navbar,
+.sidebar-nav .sidebar-brand:before,
+.sidebar-nav .dropdown-menu
+ {
+    background-color: #00121a!important;
+}
+.sidebar-nav li:before {
+    background-color: #002433!important;
+}
+.hamburger {
+    margin-top: 55px;
+    background: #00121a!important;
+}
+.hamb-top,
+.hamb-middle,
+.hamb-bottom {
+    background: #fff!important;
+}
+/** End Sidenav */

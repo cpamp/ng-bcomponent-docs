@@ -1,4 +1,5 @@
-import {NgModule} from '@angular/core';
+import {NgModule, enableProdMode} from '@angular/core';
+enableProdMode();
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './components/app.component';
 import {routing} from './app.routes';
