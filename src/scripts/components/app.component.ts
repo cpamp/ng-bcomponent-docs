@@ -11,6 +11,7 @@ import {LinkBComponent} from 'ng-bcomponents';
 export class AppComponent {
     public navItems = [
         new SidenavItem(new LinkBComponent().Initialize("Home", "/home", true)),
+        new SidenavItem(new LinkBComponent().Initialize("Getting Started", "/getting-started", true)),
         new SidenavItem(null, 'BComponent (base)', [
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/bcomponent/inputs', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/bcomponent/api'))

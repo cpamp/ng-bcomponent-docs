@@ -1,28 +1,26 @@
-<jumbotron-bcomponent title="ng-bcomponents" [size]="2" body="Bootstrap components for angular 2"></jumbotron-bcomponent>
 <content-component>
-    <heading-bcomponent title="Getting Started" subtitle="SystemJS & npm" [size]="3"></heading-bcomponent>
-    <p>
-        Install with npm by entering <code>npm i ng-bcomponents</code> into your termianl.
-    </p>
-    <p>
-        Alter your SystemJS config file to include the ng-bcomponents module.<br/>
-        <pre>
-var map = {{ '{' }}
-    // Your other libraries here
-    'ng-bcomponents':                'node_modules/ng-bcomponents'
-{{ '}' }};
-var packages = {{ '{' }}
-    // Your other libraries here
-    'ng-bcomponents':                {{ '{' }} main: 'index.js', defaultExtension: 'js' {{ '}' }}
-{{ '}' }};
-var config = {{ '{' }}
-    map: map,
-    packages: packages,
-    defaultJSExtensions: true
-{{ '}' }};
-System.config(config);</pre>
-    </p>
-    <p>
-        Import your package like any other module: <code>import {{ '{' }}AlertBComponent{{ '}' }} from 'ng-bcomponents';</code>
-    </p>
+    <heading-bcomponent title="ng-bcomponents" subtitle="Bootstrap 3 components for Angular 2"></heading-bcomponent>
+    <p>Ng-bcomponents is an Angular 2 component library of Bootstrap 3 components intending to make HTML markup simpler. Ng-bcomponents also allows you initialize bcomponents in code.</p>
+    <heading-bcomponent title="Why ng-bcomponents?" [size]="4"></heading-bcomponent>
+    <p>Ng-bcomponents is great for making HTML bootstrap markup simpler. Take the modal for example:</p>
+    <button-bcomponent text="Show modal" type="primary" [click]="demoModal.open"></button-bcomponent>
+    <modal-bcomponent #demoModal>
+        <modal-title>Modal Demo</modal-title>
+        <modal-body>Modals sure are simple with ng-bcomponents!</modal-body>
+        <modal-footer>
+            <button-bcomponent text="OK" type="primary" [click]="demoModal.close"></button-bcomponent>
+            <button-bcomponent text="Cancel" type="default" [click]="demoModal.close"></button-bcomponent>
+        </modal-footer>
+    </modal-bcomponent>
+    <p>The markup for this demo looks like this:</p>
+    <pre highlight type="html">
+&lt;button-bcomponent text=&quot;Show modal&quot; type=&quot;primary&quot; [click]=&quot;demoModal.open&quot;&gt;&lt;/button-bcomponent&gt;
+&lt;modal-bcomponent #demoModal&gt;
+    &lt;modal-title&gt;Modal Demo&lt;/modal-title&gt;
+    &lt;modal-body&gt;Modals sure are simple with ng-bcomponents!&lt;/modal-body&gt;
+    &lt;modal-footer&gt;
+        &lt;button-bcomponent text=&quot;OK&quot; type=&quot;primary&quot; [click]=&quot;demoModal.close&quot;&gt;&lt;/button-bcomponent&gt;
+        &lt;button-bcomponent text=&quot;Cancel&quot; type=&quot;default&quot; [click]=&quot;demoModal.close&quot;&gt;&lt;/button-bcomponent&gt;
+    &lt;/modal-footer&gt;
+&lt;/modal-bcomponent&gt;</pre>
 </content-component>

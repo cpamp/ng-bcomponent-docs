@@ -1,12 +1,15 @@
 import {Component} from '@angular/core';
-import {JumbotronBComponent, HeadingBComponent} from 'ng-bcomponents';
+import {HeadingBComponent, ButtonBComponent, ModalBComponent} from 'ng-bcomponents';
 import {ContentComponent} from '../content.component';
+import {HighlightDirective} from '../../directives/highlight';
 
 @Component({
     templateUrl: 'home.page.html',
     directives: [
-        JumbotronBComponent,
-        HeadingBComponent
+        HighlightDirective,
+        HeadingBComponent,
+        ButtonBComponent,
+        ModalBComponent
     ],
     inputs: []
 })

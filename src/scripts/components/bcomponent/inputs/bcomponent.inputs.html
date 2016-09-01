@@ -1,7 +1,60 @@
 <content-component>
     <heading-bcomponent title="Inputs" subtitle="BComponent" [size]="2"></heading-bcomponent>
     <p>
-        All BComponents extend the BComponent class and as a result have all of the following inputs as well.
+        All BComponents extend the BComponent class and as a result have all of the following inputs as well. HTML attributes are, in most cases, applied to the top level element in a component.
     </p>
-    <table-bcomponent [items]="inputItems" [striped]="true"></table-bcomponent>
+    <heading-bcomponent title="id" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The id input is used to assign an id attribute to a bcomponent.<br/>Example:
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent id="my-id"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [id]="myIdVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="classes" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The classes input is used to assign classes to a class attribute of a bcomponent.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent classes="class1 class2 container"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [classes]="myClassesVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="styles" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The styles input is used to assign styles to a style attribute of a bcomponent.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent styles="height:5px;width:10px;"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [styles]="myStylesVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="name" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The name input is used to assign a value to a name attribute of a bcomponent.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent name="email"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [name]="myNameVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="aria" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The aria input is used to assign a value to the aria attribute of a bcomponent.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent aria="Go"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [aria]="myAriaVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="ariaBy" subtitle="string" [size]="4"></heading-bcomponent>
+    <p>
+        The ariaBy input is used to assign a value to the aria-labelledby attribute of a bcomponent.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent ariaBy="LabelledBy"&gt;&lt;/some-bcomponent&gt;
+&lt;some-bcomponent [ariaBy]="myAriaByVariable"&gt;&lt;/some-bcomponent&gt;</pre>
+
+    <heading-bcomponent title="bcomponent" subtitle="BComponent" [size]="4"></heading-bcomponent>
+    <p>
+        The bcomponent input is used to initialize bcomponents in code. All of the properties of the passed BComponent copied are to the BComponent to which it was passed.
+    </p>
+    <pre highlight class="html">
+&lt;some-bcomponent [bcomponent]="codeInitializedBcomponent"&gt;&lt;/some-bcomponent&gt;</pre>
 </content-component>

@@ -1,5 +1,5 @@
 {
-  "name": "angular-2-bootstrap-boilerplate",
+  "name": "ng-bcomponent-docs",
   "version": "0.0.1",
   "description": "An angular 2 template using gulp and bootstrap",
   "main": "index.html",
@@ -31,6 +31,7 @@
     "angular2-in-memory-web-api": "0.0.15",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
+    "highlight.js": "^9.6.0",
     "jquery": "^2.2.4",
     "ng-bcomponents": "^0.4.2",
     "reflect-metadata": "^0.1.3",

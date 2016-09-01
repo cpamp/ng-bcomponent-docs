@@ -2,10 +2,19 @@
 <html>
 <head>
     <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ng-bcomponents</title>
 
     <!-- inject:css -->
     <!-- endinject -->
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <script>
+        System.import('scripts/app.min.js').catch(function(err){ console.error(err); });
+        hljs.initHighlightingOnLoad();
+    </script>
 </head>
 <body>
 
@@ -34,11 +43,6 @@
             </div>
         </div>
     </app-component>
-
-    <!-- inject:js -->
-    <!-- endinject -->
-    <script>
-        System.import('scripts/app.min.js').catch(function(err){ console.error(err); });
-    </script>
+ 
 </body>
 </html>
