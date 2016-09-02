@@ -14,7 +14,7 @@ export class AppComponent {
         new SidenavItem(new LinkBComponent().Initialize("Getting Started", "/getting-started", true)),
         new SidenavItem(null, 'BComponent (base)', [
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/bcomponent/inputs', true)),
-            new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/bcomponent/api'))
+            new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/bcomponent/api', true))
         ]),
         new SidenavItem(null, 'Alert', [
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/alert/inputs', true)),

@@ -6,19 +6,22 @@ import {routing} from './app.routes';
 import {HomePage} from './components/home/home.page';
 import {GettingStartedPage} from './components/gettingstarted/gettingstarted.page';
 import {BComponentInputs} from './components/bcomponent/inputs/bcomponent.inputs';
+import {BComponentApi} from './components/bcomponent/api/bcomponent.api';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomePage,
         GettingStartedPage,
-        BComponentInputs
+        BComponentInputs,
+        BComponentApi
     ],
     imports: [BrowserModule, routing],
     entryComponents: [
         HomePage,
         GettingStartedPage,
-        BComponentInputs
+        BComponentInputs,
+        BComponentApi
     ],
     bootstrap: [AppComponent]
 })

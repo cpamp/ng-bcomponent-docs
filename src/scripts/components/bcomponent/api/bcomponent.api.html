@@ -1,0 +1,147 @@
+<content-component>
+    <heading-bcomponent title="BComponent API" [size]="2"></heading-bcomponent>
+    <p>
+        All BComponents extend the BComponent class and as a result have the following API as well.
+    </p>
+
+    <heading-bcomponent title="disableAutoIdentifier" [size]="4"></heading-bcomponent>
+    <p>
+        <code>disableAutoIdentifier()</code> is used to disable automatic generation of id attributes. If you specify an id for a BComponent then an auto identifier will not be used for that BComponent. Call this method in the constructor of your <code>NgModule</code> to disable auto identifiers.
+    </p>
+    <pre highlight class="typescript">
+public static disableAutoIdentifier: () => void</pre>
+
+    <heading-bcomponent title="InitializeAttributes" [size]="4"></heading-bcomponent>
+    <p>
+        <code>InitializeAttributes()</code> is used to intialize components in code. Used to assign attribute inputs to a BComponent. Returns itself for method chaining.
+    </p>
+    <pre highlight class="typescript">
+public InitializeAttributes: (id: string = "", classes: string = "", styles: string = "", name: string = "", aria: string = "", ariaBy: string = "") => this</pre>
+
+    <heading-bcomponent title="getSelector" [size]="4"></heading-bcomponent>
+    <p>
+        <code>getSelector()</code> returns a <code>JQuery</code> object of the BComponent. <br/><small>Note: This and all the following JQuery animation methods only work with auto identifiers enabled or a specified id.</small>
+    </p>
+    <pre highlight class="typescript">
+public getSelector: () => JQuery</pre>
+
+    <heading-bcomponent title="toggle" [size]="4"></heading-bcomponent>
+    <p>
+        <code>toggle()</code> is the equivalent of jQuery's <code>toggle()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Toggle Label" [click]="lblToggle.toggle" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblToggle text="Toggle me!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public toggle: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="hide" [size]="4"></heading-bcomponent>
+    <p>
+        <code>hide()</code> is the equivalent of jQuery's <code>hide()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Hide Label" [click]="lblHide.hide" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblHide text="Hide me!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public hide: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="show" [size]="4"></heading-bcomponent>
+    <p>
+        <code>show()</code> is the equivalent of jQuery's <code>show()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Show Label" [click]="lblShow.show" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblShow text="I'm shown!" styles="display: none;"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public show: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="fadeToggle" [size]="4"></heading-bcomponent>
+    <p>
+        <code>fadeToggle()</code> is the equivalent of jQuery's <code>fadeToggle()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Fade Toggle" [click]="lblFadeToggle.fadeToggle" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblFadeToggle text="Fade toggle me!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public fadeToggle: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="fadeIn" [size]="4"></heading-bcomponent>
+    <p>
+        <code>fadeIn()</code> is the equivalent of jQuery's <code>fadeIn()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Fade In" [click]="lblFadeIn.fadeIn" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblFadeIn text="Fade me in!" styles="display: none;"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public fadeIn: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="fadeOut" [size]="4"></heading-bcomponent>
+    <p>
+        <code>fadeOut()</code> is the equivalent of jQuery's <code>fadeOut()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Fade Out" [click]="lblFadeOut.fadeOut" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblFadeOut text="Fade me out!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public fadeOut: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="fadeTo" [size]="4"></heading-bcomponent>
+    <p>
+        <code>fadeTo()</code> is the equivalent of jQuery's <code>fadeTo()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Fade to" [click]="fadeTo" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblFadeTo text="Fade to 50%!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public fadeTo: (duration: string | number = 400, opacity: number = 0, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="slideToggle" [size]="4"></heading-bcomponent>
+    <p>
+        <code>slideToggle()</code> is the equivalent of jQuery's <code>slideToggle()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Slide Toggle" [click]="lblSlideToggle.slideToggle" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblSlideToggle text="Slide toggle me!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public slideToggle: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="slideDown" [size]="4"></heading-bcomponent>
+    <p>
+        <code>slideDown()</code> is the equivalent of jQuery's <code>slideDown()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Slide Down" [click]="lblSlideDown.slideDown" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblSlideDown text="Slide me down!" styles="display: none;"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public slideDown: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+
+    <heading-bcomponent title="slideUp" [size]="4"></heading-bcomponent>
+    <p>
+        <code>slideUp()</code> is the equivalent of jQuery's <code>slideUp()</code>.
+    </p>
+    <p>
+        <button-bcomponent text="Slide Up" [click]="lblSlideUp.slideUp" type="primary"></button-bcomponent>
+        &nbsp;
+        <label-bcomponent #lblSlideUp text="Slide me up!"></label-bcomponent>
+    </p>
+    <pre highlight class="typescript">
+public slideUp: (duration: string | number = 400, callback?: Function) => JQuery</pre>
+</content-component>
