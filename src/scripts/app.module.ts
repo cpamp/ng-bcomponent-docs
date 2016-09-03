@@ -7,6 +7,7 @@ import {HomePage} from './components/home/home.page';
 import {GettingStartedPage} from './components/gettingstarted/gettingstarted.page';
 import {BComponentInputs} from './components/bcomponent/inputs/bcomponent.inputs';
 import {BComponentApi} from './components/bcomponent/api/bcomponent.api';
+import {AlertApi} from './components/alert/api/alert.api';
 
 @NgModule({
     declarations: [
@@ -14,14 +15,16 @@ import {BComponentApi} from './components/bcomponent/api/bcomponent.api';
         HomePage,
         GettingStartedPage,
         BComponentInputs,
-        BComponentApi
+        BComponentApi,
+        AlertApi
     ],
     imports: [BrowserModule, routing],
     entryComponents: [
         HomePage,
         GettingStartedPage,
         BComponentInputs,
-        BComponentApi
+        BComponentApi,
+        AlertApi
     ],
     bootstrap: [AppComponent]
 })

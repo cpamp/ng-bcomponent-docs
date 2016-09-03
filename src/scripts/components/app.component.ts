@@ -10,6 +10,10 @@ import {LinkBComponent} from 'ng-bcomponents';
 })
 export class AppComponent {
     public navItems = [
+        new SidenavItem(null, 'Get ng-bcomponents', [
+            new SidenavDropdownItem(new LinkBComponent().Initialize('GitHub', 'https://github.com/cpamp21/ng-bcomponents')),
+            new SidenavDropdownItem(new LinkBComponent().Initialize('npm', 'https://www.npmjs.com/package/ng-bcomponents'))
+        ]),
         new SidenavItem(new LinkBComponent().Initialize("Home", "/home", true)),
         new SidenavItem(new LinkBComponent().Initialize("Getting Started", "/getting-started", true)),
         new SidenavItem(null, 'BComponent (base)', [
@@ -18,8 +22,7 @@ export class AppComponent {
         ]),
         new SidenavItem(null, 'Alert', [
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/alert/inputs', true)),
-            new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/alert/api', true)),
-            new SidenavDropdownItem(new LinkBComponent().Initialize('Usage', '/alert/usage', true))
+            new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/alert/api', true))
         ])
     ];
 }
