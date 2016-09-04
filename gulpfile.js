@@ -67,12 +67,14 @@ var files = {
             paths.source.scripts + '/systemjs.config.js',
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            paths.source.root + '/lib/highlight.pack.js'
+            paths.source.root + '/lib/highlight.pack.js',
+            'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'
         ],
         stylesheets: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
             'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
             paths.source.root + '/lib/styles/vs.css',
+            'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'
         ],
         fonts: 'node_modules/bootstrap/dist/fonts/*.svg',
         angular: ['node_modules/@angular/**/*',

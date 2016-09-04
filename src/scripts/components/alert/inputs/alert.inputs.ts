@@ -18,7 +18,10 @@ export class AlertInputs {
     [hidden]
     [type]`,
 
-        text: `<alert-bcomponent text="My Alert"></alert-bcomponent>`,
+        text: 
+`<alert-bcomponent text="My Alert"></alert-bcomponent>
+<!-- ng-content alternative -->
+<alert-bcomponent><b>Ng-Content alert</b> Wow!</alert-bcomponent>`,
 
         dismissible: `<alert-bcomponent [dismissible]="true"></alert-bcomponent>`,
 

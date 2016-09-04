@@ -7,6 +7,7 @@ import {HomePage} from './components/home/home.page';
 import {GettingStartedPage} from './components/gettingstarted/gettingstarted.page';
 import {BComponentInputs} from './components/bcomponent/inputs/bcomponent.inputs';
 import {BComponentApi} from './components/bcomponent/api/bcomponent.api';
+import {AlertInputs} from './components/alert/inputs/alert.inputs';
 import {AlertApi} from './components/alert/api/alert.api';
 
 @NgModule({
@@ -16,6 +17,7 @@ import {AlertApi} from './components/alert/api/alert.api';
         GettingStartedPage,
         BComponentInputs,
         BComponentApi,
+        AlertInputs,
         AlertApi
     ],
     imports: [BrowserModule, routing],
@@ -24,6 +26,7 @@ import {AlertApi} from './components/alert/api/alert.api';
         GettingStartedPage,
         BComponentInputs,
         BComponentApi,
+        AlertInputs,
         AlertApi
     ],
     bootstrap: [AppComponent]

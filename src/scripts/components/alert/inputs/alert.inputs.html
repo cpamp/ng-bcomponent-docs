@@ -1,9 +1,9 @@
 <content-component>
-    <heading-bcomponent tite="AlertBComponent" subtitle="Inputs" [size]="2"></heading-bcomponent>
+    <heading-bcomponent title="AlertBComponent" subtitle="Inputs" [size]="2"></heading-bcomponent>
 
     <heading-bcomponent title="text" subtitle="string" [size]="4"></heading-bcomponent>
     <p>
-        The <code>text</code> input is used for for the text to display within the alert. This in put uses the <code>[innerHtml]</code> attribute.
+        The <code>text</code> input is used for for the text to display within the alert. This in put uses the <code>[innerHtml]</code> attribute. Alternatively, you can provide text between the <code>alert-bcomponent</code> opening and closing tag.
     </p>
     <pre highlight class="html">{{code.text}}</pre>
 
@@ -18,11 +18,13 @@
 
     <heading-bcomponent title="hidden" subtitle="boolean" [size]="4"></heading-bcomponent>
     <p>
-        The <code>hidden</code> input is used to make an alert hidden on page load.
+        The <code>hidden</code> input is used to make an alert hidden on page load. Defaults to false.
     </p>
     <p>
         <button-bcomponent text="Show Alert" [click]="alrtHidden.show"></button-bcomponent>
-        <alert-bcomponent text="<b>Hidden</b> This alert was hidden!" [hidden]="true"></alert-bcomponent>
+    </p>
+    <p>
+        <alert-bcomponent #alrtHidden text="<b>Hidden</b> This alert was hidden!" [hidden]="true"></alert-bcomponent>
     </p>
     <pre highlight class="html">{{code.hidden}}</pre>
 

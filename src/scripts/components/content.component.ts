@@ -8,4 +8,11 @@ import {Component} from '@angular/core';
 })
 export class ContentComponent {
 
+    ngAfterViewInit() {
+        $(".content-container").mCustomScrollbar({
+            theme: 'minimal-dark',
+            scrollInertia: 0
+        });
+    }
+
 }
