@@ -17,14 +17,17 @@ export class AppComponent {
         new SidenavItem(new LinkBComponent().Initialize("Home", "/home", true)),
         new SidenavItem(new LinkBComponent().Initialize("Getting Started", "/getting-started", true)),
         new SidenavItem(null, 'BComponent (base)', [
+            new SidenavDropdownItem(new LinkBComponent().Initialize('About', '/bcomponent', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/bcomponent/api', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/bcomponent/inputs', true))
         ]),
         new SidenavItem(null, 'Alert', [
+            new SidenavDropdownItem(new LinkBComponent().Initialize('About', '/alert', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/alert/api', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/alert/inputs', true))
         ]),
         new SidenavItem(null, 'Badge', [
+            new SidenavDropdownItem(new LinkBComponent().Initialize('About', '/badge', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('API', '/badge/api', true)),
             new SidenavDropdownItem(new LinkBComponent().Initialize('Inputs', '/badge/inputs', true))
         ])
