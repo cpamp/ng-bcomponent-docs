@@ -1,11 +1,11 @@
 import {Component, ViewChild} from '@angular/core';
 import {HighlightDirective} from '../../../directives/highlight';
 import {ContentComponent} from '../../content.component';
-import {HeadingBComponent, ButtonBComponent, LabelBComponent} from 'ng-bcomponents';
+import {LabelBComponent} from 'ng-bcomponents';
 
 @Component({
     templateUrl: 'bcomponent.api.html',
-    directives: [HighlightDirective, ContentComponent, HeadingBComponent, ButtonBComponent, LabelBComponent],
+    directives: [HighlightDirective, ContentComponent],
     inputs: []
 })
 export class BComponentApi {

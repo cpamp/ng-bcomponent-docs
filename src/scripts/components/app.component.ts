@@ -1,12 +1,12 @@
 import {Component} from '@angular/core';
 import {ROUTER_DIRECTIVES} from '@angular/router';
-import {SidenavBComponent, SidenavDropdownItem, SidenavItem} from 'ng-bcomponents';
+import {SidenavDropdownItem, SidenavItem} from 'ng-bcomponents';
 import {LinkBComponent} from 'ng-bcomponents';
 
 @Component({
     selector: 'app-component',
     templateUrl: 'app.component.html',
-    directives: [ROUTER_DIRECTIVES, SidenavBComponent]
+    directives: [ROUTER_DIRECTIVES]
 })
 export class AppComponent {
     public navItems = [

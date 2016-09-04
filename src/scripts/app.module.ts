@@ -11,6 +11,7 @@ import {BComponentApi} from './components/bcomponent/api/bcomponent.api';
 import {AlertAbout} from './components/alert/alert.about';
 import {AlertInputs} from './components/alert/inputs/alert.inputs';
 import {AlertApi} from './components/alert/api/alert.api';
+import {NgBComponentsModule} from 'ng-bcomponents';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,7 @@ import {AlertApi} from './components/alert/api/alert.api';
         AlertInputs,
         AlertApi
     ],
-    imports: [BrowserModule, routing],
+    imports: [BrowserModule, routing, NgBComponentsModule],
     entryComponents: [
         HomePage,
         GettingStartedPage,

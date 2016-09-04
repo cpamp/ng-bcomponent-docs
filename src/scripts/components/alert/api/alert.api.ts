@@ -1,12 +1,11 @@
 import {Component} from '@angular/core';
-import {HeadingBComponent} from 'ng-bcomponents';
 import {HighlightDirective} from '../../../directives/highlight';
-import {} from '../../content.component';
+import {ContentComponent} from '../../content.component';
 
 @Component({
     selector: '',
     templateUrl: 'alert.api.html',
-    directives: [HeadingBComponent, HighlightDirective],
+    directives: [HighlightDirective, ContentComponent],
     inputs: []
 })
 export class AlertApi {
