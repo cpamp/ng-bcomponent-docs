@@ -5,22 +5,13 @@
     <p>Ng-bcomponents is great for making HTML bootstrap markup simpler. Take the modal for example:</p>
     <button-bcomponent text="Show modal" type="primary" [click]="demoModal.open"></button-bcomponent>
     <modal-bcomponent #demoModal>
-        <modal-title>Modal Demo</modal-title>
-        <modal-body>Modals sure are simple with ng-bcomponents!</modal-body>
-        <modal-footer>
+        <div modal-title>Modal Demo</div>
+        <div modal-body>Modals sure are simple with ng-bcomponents!</div>
+        <div modal-footer>
             <button-bcomponent text="OK" type="primary" [click]="demoModal.close"></button-bcomponent>
             <button-bcomponent text="Cancel" type="default" [click]="demoModal.close"></button-bcomponent>
-        </modal-footer>
+        </div>
     </modal-bcomponent>
     <p>The markup for this demo looks like this:</p>
-    <pre highlight type="html">
-&lt;button-bcomponent text=&quot;Show modal&quot; type=&quot;primary&quot; [click]=&quot;demoModal.open&quot;&gt;&lt;/button-bcomponent&gt;
-&lt;modal-bcomponent #demoModal&gt;
-    &lt;modal-title&gt;Modal Demo&lt;/modal-title&gt;
-    &lt;modal-body&gt;Modals sure are simple with ng-bcomponents!&lt;/modal-body&gt;
-    &lt;modal-footer&gt;
-        &lt;button-bcomponent text=&quot;OK&quot; type=&quot;primary&quot; [click]=&quot;demoModal.close&quot;&gt;&lt;/button-bcomponent&gt;
-        &lt;button-bcomponent text=&quot;Cancel&quot; type=&quot;default&quot; [click]=&quot;demoModal.close&quot;&gt;&lt;/button-bcomponent&gt;
-    &lt;/modal-footer&gt;
-&lt;/modal-bcomponent&gt;</pre>
+    <pre highlight type="html">{{code.modal}}</pre>
 </content-component>

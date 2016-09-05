@@ -1,9 +1,7 @@
 import {Component} from '@angular/core';
-import {ContentComponent} from '../../content.component';
 
 @Component({
     templateUrl: 'bcomponent.inputs.html',
-    directives: [ContentComponent],
     inputs: []
 })
 export class BComponentInputs {

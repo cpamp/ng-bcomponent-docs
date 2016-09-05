@@ -1,11 +1,8 @@
 import {Component} from '@angular/core';
-import {HighlightDirective} from '../../../directives/highlight';
-import {ContentComponent} from '../../content.component';
 
 @Component({
     selector: '',
     templateUrl: 'alert.inputs.html',
-    directives: [HighlightDirective, ContentComponent],
     inputs: []
 })
 export class AlertInputs {

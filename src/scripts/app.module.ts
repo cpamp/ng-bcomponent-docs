@@ -1,5 +1,9 @@
 import {NgModule, enableProdMode} from '@angular/core';
 enableProdMode();
+
+import {ContentComponent} from './components/content.component';
+import {HighlightDirective} from './directives/highlight';
+
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './components/app.component';
 import {routing} from './app.routes';
@@ -15,6 +19,8 @@ import {NgBComponentsModule} from 'ng-bcomponents';
 
 @NgModule({
     declarations: [
+        ContentComponent,
+        HighlightDirective,
         AppComponent,
         HomePage,
         GettingStartedPage,
