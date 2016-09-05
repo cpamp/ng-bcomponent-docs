@@ -17,30 +17,27 @@ import {AlertInputs} from './components/alert/inputs/alert.inputs';
 import {AlertApi} from './components/alert/api/alert.api';
 import {NgBComponentsModule} from 'ng-bcomponents';
 
+var pages = [
+    HomePage,
+    GettingStartedPage,
+    BComponentAbout,
+    BComponentApi,
+    BComponentInputs,
+    AlertAbout,
+    AlertApi,
+    AlertInputs
+];
+
 @NgModule({
     declarations: [
         ContentComponent,
         HighlightDirective,
         AppComponent,
-        HomePage,
-        GettingStartedPage,
-        BComponentAbout,
-        BComponentInputs,
-        BComponentApi,
-        AlertAbout,
-        AlertInputs,
-        AlertApi
+        ...pages
     ],
     imports: [BrowserModule, routing, NgBComponentsModule],
     entryComponents: [
-        HomePage,
-        GettingStartedPage,
-        BComponentAbout,
-        BComponentInputs,
-        BComponentApi,
-        AlertAbout,
-        AlertInputs,
-        AlertApi
+        ...pages
     ],
     bootstrap: [AppComponent]
 })
