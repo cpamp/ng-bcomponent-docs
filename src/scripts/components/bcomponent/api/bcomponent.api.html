@@ -54,7 +54,7 @@ public hide: (duration: string | number = 400, callback?: Function) => JQuery</p
         <code>show()</code> is the equivalent of jQuery's <code>show()</code>.
     </p>
     <p>
-        <button-bcomponent text="Show Label" [click]="lblShow.show" type="primary"></button-bcomponent>
+        <button-bcomponent text="Show Label" (onClick)="lblShow.show(5000)" type="primary"></button-bcomponent>
         &nbsp;
         <label-bcomponent #lblShow text="I'm shown!" styles="display: none;"></label-bcomponent>
     </p>
