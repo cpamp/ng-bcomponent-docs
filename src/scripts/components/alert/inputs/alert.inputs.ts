@@ -8,21 +8,21 @@ import {Component} from '@angular/core';
 export class AlertInputs {
     public code = {
         overview:
-`<alert-bcomponent
+`<bc-alert
     [text]
     [dismissible]
     [hidden]
     [type]`,
 
         text: 
-`<alert-bcomponent text="My Alert"></alert-bcomponent>
+`<bc-alert text="My Alert"></bc-alert>
 <!-- ng-content alternative -->
-<alert-bcomponent><b>Ng-Content alert</b> Wow!</alert-bcomponent>`,
+<bc-alert><b>Ng-Content alert</b> Wow!</bc-alert>`,
 
-        dismissible: `<alert-bcomponent [dismissible]="true"></alert-bcomponent>`,
+        dismissible: `<bc-alert [dismissible]="true"></bc-alert>`,
 
-        hidden: `<alert-bcomponent [hidden]="true"></alert-bcomponent>`,
+        hidden: `<bc-alert [hidden]="true"></bc-alert>`,
 
-        type: `<alert-bcomponent type="success"></alert-bcomponent>`
+        type: `<bc-alert type="success"></bc-alert>`
     }
 }

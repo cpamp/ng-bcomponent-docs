@@ -1,10 +1,10 @@
 <content-component>
-    <heading-bcomponent title="BComponent" [size]="2"></heading-bcomponent>
+    <bc-heading title="BComponent" [size]="2"></bc-heading>
     <p>
         The BComponent class is the base for all BComponents.
     </p>
-    <ul style="list-style:none;">
-        <li><link-bcomponent link="/bcomponent/api" text="BComponent API" [router]="true"></link-bcomponent></li>
-        <li><link-bcomponent link="/bcomponent/inputs" text="BComponent Inputs" [router]="true"></link-bcomponent></li>
-    </ul>
+    <bc-list>
+        <a bc-list-item [routerLink]="'/bcomponent/api'">BComponent API</a>
+        <a bc-list-item [routerLink]="'/bcomponent/inputs'">BComponent Inputs</a>
+    </bc-list>
 </content-component>

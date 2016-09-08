@@ -7,13 +7,13 @@ import {Component} from '@angular/core';
 export class HomePage {
     public code = {
         modal:
-`<modal-bcomponent #demoModal>
-    <div modal-title>Modal Demo</div>
-    <div modal-body>Modals sure are simple with ng-bcomponents!</div>
-    <div modal-footer>
-        <button-bcomponent text="OK" type="primary" [click]="demoModal.close"></button-bcomponent>
-        <button-bcomponent text="Cancel" type="default" [click]="demoModal.close"></button-bcomponent>
-    </div>
-</modal-bcomponent>`
+`<bc-modal #demoModal>
+    <bc-modal-title>Modal Demo</bc-modal-title>
+    <bc-modal-body>Modals sure are simple with ng-bcomponents!</bc-modal-body>
+    <bc-modal-footer>
+        <bc-button text="OK" type="primary" (onClick)="demoModal.close()"></bc-button>
+        <bc-button text="Cancel" type="default" (onClick)="demoModal.close()"></bc-button>
+    </bc-modal-footer>
+</bc-modal>`
     }
 }

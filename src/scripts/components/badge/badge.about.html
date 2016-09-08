@@ -1,10 +1,10 @@
 <content-component>
-    <heading-bcomponent title="BadgeBComponent" [size]="2"></heading-bcomponent>
+    <bc-heading title="BadgeBComponent" [size]="2"></bc-heading>
     <p>
         The <code>BadgeBComponent</code> is a counter that can be used to display the number of items for an object.
     </p>
-    <ul style="list-style:none;">
-        <li><link-bcomponent text="BadgeBComponent API" link="/badge/api" [router]="true"></link-bcomponent></li>
-        <li><link-bcomponent text="BadgeBComponent Inputs" link="/badge/inputs" [router]="true"></link-bcomponent></li>
-    </ul>
+    <bc-list>
+        <a bc-list-item [routerLink]="'/badge/api'">BadgeBComponent API</a>
+        <a bc-list-item [routerLink]="'/badge/inputs'">BadgeBComponent Inputs</a>
+    </bc-list>
 </content-component>

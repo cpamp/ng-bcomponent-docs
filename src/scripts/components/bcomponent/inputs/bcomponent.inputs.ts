@@ -8,41 +8,41 @@ export class BComponentInputs {
 
     public code = {
         overview:
-`<some-bcomponent
+`<bc-some-component
     [id]
     [classes]
     [styles]
     [name]
     [aria]
     [ariaBy]
-    [bcomponent]></some-bcomponent>`,
+    [bcomponent]></bc-some-component>`,
 
         id: 
-`<some-bcomponent id="my-id"></some-bcomponent>
-<some-bcomponent [id]="myIdVariable"></some-bcomponent>`,
+`<bc-some-component id="my-id"></bc-some-component>
+<bc-some-component [id]="myIdVariable"></bc-some-component>`,
 
         classes:
-`<some-bcomponent classes="class1 class2 container"></some-bcomponent>
-<some-bcomponent [classes]="myClassesVariable"></some-bcomponent>`,
+`<bc-some-component classes="class1 class2 container"></bc-some-component>
+<bc-some-component [classes]="myClassesVariable"></bc-some-component>`,
 
         styles:
-`<some-bcomponent styles="height:5px;width:10px;"></some-bcomponent>
-<some-bcomponent [styles]="myStylesVariable"></some-bcomponent>`,
+`<bc-some-component styles="height:5px;width:10px;"></bc-some-component>
+<bc-some-component [styles]="myStylesVariable"></bc-some-component>`,
 
         name:
-`<some-bcomponent name="email"></some-bcomponent>
-<some-bcomponent [name]="myNameVariable"></some-bcomponent>`,
+`<bc-some-component name="email"></bc-some-component>
+<bc-some-component [name]="myNameVariable"></bc-some-component>`,
 
         aria:
-`<some-bcomponent aria="Go"></some-bcomponent>
-<some-bcomponent [aria]="myAriaVariable"></some-bcomponent>`,
+`<bc-some-component aria="Go"></bc-some-component>
+<bc-some-component [aria]="myAriaVariable"></bc-some-component>`,
 
         ariaBy:
-`<some-bcomponent ariaBy="LabelledBy"></some-bcomponent>
-<some-bcomponent [ariaBy]="myAriaByVariable"></some-bcomponent>`,
+`<bc-some-component ariaBy="LabelledBy"></bc-some-component>
+<bc-some-component [ariaBy]="myAriaByVariable"></bc-some-component>`,
 
         bcomponent:
-`<some-bcomponent [bcomponent]="codeInitializedBcomponent"></some-bcomponent>`
+`<bc-some-component [bcomponent]="codeInitializedBcomponent"></bc-some-component>`
     }
 
 }

@@ -8,6 +8,6 @@ import {Component} from '@angular/core';
 export class BadgeInputs {
     public code = {
         value:
-`<badge-bcomponent [value]="5"></badge-bcomponent>`
+`<bc-badge [value]="5"></bc-badge>`
     }
 }

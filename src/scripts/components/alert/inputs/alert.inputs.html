@@ -1,48 +1,48 @@
 <content-component>
-    <heading-bcomponent title="AlertBComponent" subtitle="Inputs" [size]="2"></heading-bcomponent>
+    <bc-heading title="AlertBComponent" subtitle="Inputs" [size]="2"></bc-heading>
 
-    <heading-bcomponent title="text" subtitle="string" [size]="4"></heading-bcomponent>
+    <bc-heading title="text" subtitle="string" [size]="4"></bc-heading>
     <p>
-        The <code>text</code> input is used for for the text to display within the alert. This in put uses the <code>[innerHtml]</code> attribute. Alternatively, you can provide text between the <code>alert-bcomponent</code> opening and closing tag.
+        The <code>text</code> input is used for for the text to display within the alert. This in put uses the <code>[innerHtml]</code> attribute. Alternatively, you can provide text between the <code>bc-alert</code> opening and closing tag.
     </p>
     <pre highlight class="html">{{code.text}}</pre>
 
-    <heading-bcomponent title="dismissible" subtitle="boolean" [size]="4"></heading-bcomponent>
+    <bc-heading title="dismissible" subtitle="boolean" [size]="4"></bc-heading>
     <p>
         The <code>dismissible</code> input is used to created alerts that can be closed with user action. Dismissible alerts have a close button on the far right of the alert. Defaults to <code>false</code>.
     </p>
     <p>
-        <alert-bcomponent id="some-id" text="I am dismissible" [dismissible]="true"></alert-bcomponent>
+        <bc-alert id="some-id" text="I am dismissible" [dismissible]="true"></bc-alert>
     </p>
     <pre highlight class="html">{{code.dismissible}}</pre>
 
-    <heading-bcomponent title="hidden" subtitle="boolean" [size]="4"></heading-bcomponent>
+    <bc-heading title="hidden" subtitle="boolean" [size]="4"></bc-heading>
     <p>
         The <code>hidden</code> input is used to make an alert hidden on page load. Defaults to false.
     </p>
     <p>
-        <button-bcomponent text="Show Alert" [click]="alrtHidden.show"></button-bcomponent>
+        <bc-button text="Show Alert" (onClick)="alrtHidden.show()"></bc-button>
     </p>
     <p>
-        <alert-bcomponent #alrtHidden text="<b>Hidden</b> This alert was hidden!" [hidden]="true"></alert-bcomponent>
+        <bc-alert #alrtHidden text="<b>Hidden</b> This alert was hidden!" [hidden]="true"></bc-alert>
     </p>
     <pre highlight class="html">{{code.hidden}}</pre>
 
-    <heading-bcomponent title="type" subtitle="DisplayType" [size]="4"></heading-bcomponent>
+    <bc-heading title="type" subtitle="DisplayType" [size]="4"></bc-heading>
     <p>
         The <code>type</code> input is used to determine what type of alert to show. Acceptable values are: <code>success</code>, <code>info</code>, <code>warning</code>, and <code>danger</code>. Defaults to success.
     </p>
     <p>
-        <alert-bcomponent type="success" text="<b>Success</b> It worked!"></alert-bcomponent>
+        <bc-alert type="success" text="<b>Success</b> It worked!"></bc-alert>
     </p>
     <p>
-        <alert-bcomponent type="info" text="<b>Info</b> Some information"></alert-bcomponent>
+        <bc-alert type="info" text="<b>Info</b> Some information"></bc-alert>
     </p>
     <p>
-        <alert-bcomponent type="warning" text="<b>Warning</b> Watch it!"></alert-bcomponent>
+        <bc-alert type="warning" text="<b>Warning</b> Watch it!"></bc-alert>
     </p>
     <p>
-        <alert-bcomponent type="danger" text="<b>Danger</b> You messed up!"></alert-bcomponent>
+        <bc-alert type="danger" text="<b>Danger</b> You messed up!"></bc-alert>
     </p>
     <pre highlight class="html">{{code.type}}</pre>
 </content-component>

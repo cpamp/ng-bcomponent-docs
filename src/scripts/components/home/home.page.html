@@ -1,17 +1,17 @@
 <content-component>
-    <heading-bcomponent title="ng-bcomponents" subtitle="Bootstrap 3 components for Angular 2"></heading-bcomponent>
+    <bc-heading title="ng-bcomponents" subtitle="Bootstrap 3 components for Angular 2"></bc-heading>
     <p>Ng-bcomponents is an Angular 2 component library of Bootstrap 3 components intending to make HTML markup simpler. Ng-bcomponents also allows you initialize bcomponents in code.</p>
-    <heading-bcomponent title="Why ng-bcomponents?" [size]="4"></heading-bcomponent>
+    <bc-heading title="Why ng-bcomponents?" [size]="4"></bc-heading>
     <p>Ng-bcomponents is great for making HTML bootstrap markup simpler. Take the modal for example:</p>
-    <button-bcomponent text="Show modal" type="primary" [click]="demoModal.open"></button-bcomponent>
-    <modal-bcomponent #demoModal>
-        <div modal-title>Modal Demo</div>
-        <div modal-body>Modals sure are simple with ng-bcomponents!</div>
-        <div modal-footer>
-            <button-bcomponent text="OK" type="primary" [click]="demoModal.close"></button-bcomponent>
-            <button-bcomponent text="Cancel" type="default" [click]="demoModal.close"></button-bcomponent>
-        </div>
-    </modal-bcomponent>
+    <bc-button text="Show modal" type="primary" (onClick)="demoModal.open()"></bc-button>
+    <bc-modal #demoModal>
+        <bc-modal-title>Modal Demo</bc-modal-title>
+        <bc-modal-body>Modals sure are simple with ng-bcomponents!</bc-modal-body>
+        <bc-modal-footer>
+            <bc-button text="OK" type="primary" (onClick)="demoModal.close()"></bc-button>
+            <bc-button text="Cancel" type="default" (onClick)="demoModal.close()"></bc-button>
+        </bc-modal-footer>
+    </bc-modal>
     <p>The markup for this demo looks like this:</p>
     <pre highlight type="html">{{code.modal}}</pre>
 </content-component>
